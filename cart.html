@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegefoods - Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="cart-page">
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> + 1235 2355 98</span>
+                <span><i class="fas fa-paper-plane"></i> YOUREMAIL@EMAIL.COM</span>
+                <span>3-5 BUSINESS DAYS DELIVERY & FREE RETURNS</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>VEGEFOODS</h1>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="#">SHOP <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="wishlist.html">Wishlist</a></li>
+                            <li><a href="product-single.html">Single Product</a></li>
+                            <li><a href="cart.html">Cart</a></li>
+                            <li><a href="checkout.html">Checkout</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="nav-cart">
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">[0]</span>
+                </a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Hero Section -->
+    <section class="hero cart-hero">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80" alt="Shopping Cart">
+                </div>
+                <div class="hero-content">
+                    <h2><a href="index.html">HOME</a> CART</h2>
+                    <h1>CART</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Items Section -->
+    <section class="cart-items">
+        <div class="container">
+            <div class="cart-table">
+                <div class="cart-header">
+                    <div class="header-item">Product</div>
+                    <div class="header-item">Price</div>
+                    <div class="header-item">Quantity</div>
+                    <div class="header-item">Total</div>
+                </div>
+                
+                <div class="cart-item">
+                    <div class="product-info">
+                        <button class="remove-btn"><i class="fas fa-times"></i></button>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Bell Pepper">
+                        </div>
+                        <div class="product-details">
+                            <h3>Bell Pepper</h3>
+                            <p>Far far away, behind the word mountains, far from the countries.</p>
+                        </div>
+                    </div>
+                    <div class="product-price">$4.90</div>
+                    <div class="product-quantity">
+                        <input type="number" value="1" min="1">
+                    </div>
+                    <div class="product-total">$4.90</div>
+                </div>
+
+                <div class="cart-item">
+                    <div class="product-info">
+                        <button class="remove-btn"><i class="fas fa-times"></i></button>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80" alt="Purple Cabbage">
+                        </div>
+                        <div class="product-details">
+                            <h3>Avocado</h3>
+                            <p>Far far away, behind the word mountains, far from the countries.</p>
+                        </div>
+                    </div>
+                    <div class="product-price">$200.70</div>
+                    <div class="product-quantity">
+                        <input type="number" value="1" min="1">
+                    </div>
+                    <div class="product-total">$200.70</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Summary Section -->
+    <section class="cart-summary">
+        <div class="container">
+            <div class="summary-grid">
+                <!-- Coupon Code -->
+                <div class="summary-box">
+                    <h3>Coupon Code</h3>
+                    <p>Enter your coupon code if you have one</p>
+                    <div class="coupon-form">
+                        <input type="text" placeholder="Coupon code">
+                        <button class="apply-btn">Apply Coupon</button>
+                    </div>
+                </div>
+
+                <!-- Shipping Estimate -->
+                <div class="summary-box">
+                    <h3>Estimate shipping and tax</h3>
+                    <p>Enter your destination to get a shipping estimate</p>
+                    <div class="shipping-form">
+                        <input type="text" placeholder="Country">
+                        <input type="text" placeholder="State/Province">
+                        <input type="text" placeholder="Zip/Postal Code">
+                        <button class="estimate-btn">Estimate</button>
+                    </div>
+                </div>
+
+                <!-- Cart Totals -->
+                <div class="summary-box">
+                    <h3>Cart Totals</h3>
+                    <div class="totals-list">
+                        <div class="total-item">
+                            <span>Subtotal</span>
+                            <span>$204.160</span>
+                        </div>
+                        <div class="total-item">
+                            <span>Delivery</span>
+                            <span>$0.00</span>
+                        </div>
+                        <div class="summary-box">
+                            <span>Discount</span>
+                            <span>$4.00</span>
+                        </div>
+                        <div class="total-item total-final">
+                            <span>TOTAL</span>
+                            <span>$200.160</span>
+                        </div>
+                    </div>
+                    <button class="checkout-btn">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3>Subcribe to our Newsletter</h3>
+                    <p>Get e-mail updates about our latest shops and special offers</p>
+                </div>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter email address">
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Vegefoods</h4>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Journal</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">Shipping Information</a></li>
+                        <li><a href="#">Returns & Exchange</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Have a Questions?</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+2 392 3929 210</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@yourdomain.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Copyright ©2025 All rights reserved | This template is made with <i class="fas fa-heart"></i> by <a href="#">Colorlib</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

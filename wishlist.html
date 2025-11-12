@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegefoods - Wishlist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="wishlist-page">
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> + 1235 2355 98</span>
+                <span><i class="fas fa-paper-plane"></i> YOUREMAIL@EMAIL.COM</span>
+                <span>3-5 BUSINESS DAYS DELIVERY & FREE RETURNS</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>VEGEFOODS</h1>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="#">SHOP <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="wishlist.html">Wishlist</a></li>
+                            <li><a href="#">Single Product</a></li>
+                            <li><a href="cart.html">Cart</a></li>
+                            <li><a href="checkout.html">Checkout</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="nav-cart">
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">[0]</span>
+                </a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Wishlist Hero Section -->
+    <section class="hero wishlist-hero">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80" alt="Fresh Vegetables and Fruits">
+                </div>
+                <div class="hero-content">
+                    <h2><a href="index.html">HOME</a>  WISHLIST</h2>
+                    <h1>MY WISHLIST</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wishlist Products Section -->
+    <section class="wishlist-products">
+        <div class="container">
+            <div class="wishlist-header">
+                <div class="header-item">Product List</div>
+                <div class="header-item">Price</div>
+                <div class="header-item">Quantity</div>
+                <div class="header-item">Total</div>
+            </div>
+            
+            <div class="wishlist-items">
+                <!-- Wishlist Item 1 -->
+                <div class="wishlist-item">
+                    <div class="remove-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80" alt="Avocado">
+                        </div>
+                        <div class="product-details">
+                            <h3>Avocado</h3>
+                            <p>Far far away, behind the word mountains, far from the countries</p>
+                        </div>
+                    </div>
+                    <div class="product-price">$200.70</div>
+                    <div class="product-quantity">
+                        <input type="number" value="1" min="1">
+                    </div>
+                    <div class="product-total">$200.70</div>
+                </div>
+
+                <!-- Wishlist Item 2 -->
+                <div class="wishlist-item">
+                    <div class="remove-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="PineApple">
+                        </div>
+                        <div class="product-details">
+                            <h3>Pineapple</h3>
+                            <p>Far far away, behind the word mountains, far from the countries</p>
+                        </div>
+                    </div>
+                    <div class="product-price">$15.70</div>
+                    <div class="product-quantity">
+                        <input type="number" value="1" min="1">
+                    </div>
+                    <div class="product-total">$15.70</div>
+                </div>
+
+                <!-- Wishlist Item 3 -->
+                <div class="wishlist-item">
+                    <div class="remove-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1459411621453-7b03977f4bfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Cauliflower">
+                        </div>
+                        <div class="product-details">
+                            <h3>Cauliflower</h3>
+                            <p>Far far away, behind the word mountains, far from the countries</p>
+                        </div>
+                    </div>
+                    <div class="product-price">$25.70</div>
+                    <div class="product-quantity">
+                        <input type="number" value="1" min="1">
+                    </div>
+                    <div class="product-total">$25.70</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3>Subscribe to our Newsletter</h3>
+                    <p>Get e-mail updates about our latest shops and special offers</p>
+                </div>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter email address">
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Vegefoods</h4>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Journal</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">Shipping Information</a></li>
+                        <li><a href="#">Returns & Exchange</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Have a Questions?</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+2 392 3929 210</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@yourdomain.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Copyright ©2025 All rights reserved | This template is made with <i class="fas fa-heart"></i> by <a href="#">Colorlib</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

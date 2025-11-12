@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegefoods - Product Single</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="product-single-page">
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> + 1235 2355 98</span>
+                <span><i class="fas fa-paper-plane"></i> YOUREMAIL@EMAIL.COM</span>
+                <span>3-5 BUSINESS DAYS DELIVERY & FREE RETURNS</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>VEGEFOODS</h1>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="#">SHOP <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="wishlist.html">Wishlist</a></li>
+                            <li><a href="product-single.html">Single Product</a></li>
+                            <li><a href="cart.html">Cart</a></li>
+                            <li><a href="checkout.html">Checkout</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="nav-cart">
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">[0]</span>
+                </a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Hero Section -->
+    <section class="hero product-hero">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80" alt="Fresh Vegetables and Fruits">
+                </div>
+                <div class="hero-content">
+                    <h2><a href="index.html">HOME</a>  PRODUCT SINGLE</h2>
+                    <h1>PRODUCT SINGLE</h1>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Section -->
+    <section class="product-details">
+        <div class="container">
+            <div class="product-layout">
+                <!-- Product Image (Left Side) -->
+                <div class="product-image-section">
+                    <div class="main-product-image">
+                     <img src="https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Bell Pepper">
+
+
+
+
+                    </div>
+                </div>
+
+                <!-- Product Info (Right Side) -->
+                <div class="product-info-section">
+                    <h1 class="product-title">Bell Pepper</h1>
+                    
+                    <div class="product-rating">
+                        <span class="rating-score">5.0</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="rating-count">100 Rating</span>
+                        <span class="sold-count">500 Sold</span>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="price">$120.00</span>
+                    </div>
+
+                    <div class="product-description">
+                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn't take long until.</p>
+                    </div>
+
+                    <div class="product-options">
+                        <div class="size-selector">
+                            <label for="size">Size:</label>
+                            <select id="size" name="size">
+                                <option value="small">SMALL</option>
+                                <option value="medium">MEDIUM</option>
+                                <option value="large">LARGE</option>
+                            </select>
+                        </div>
+
+                        <div class="quantity-selector">
+                            <label for="quantity">Quantity:</label>
+                            <div class="quantity-controls">
+                                <button type="button" class="qty-btn minus">-</button>
+                                <input type="number" id="quantity" name="quantity" value="1" min="1">
+                                <button type="button" class="qty-btn plus">+</button>
+                            </div>
+                        </div>
+
+                        <div class="availability">
+                            <span>1000 kg available</span>
+                        </div>
+                    </div>
+
+                    <div class="add-to-cart">
+                        <button class="add-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products fade-in fade-in-delay-2">
+        <div class="container">
+            <div class="section-header">
+                <h2>Related Products</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            </div>
+            <div class="featured-grid">
+                <div class="featured-item">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80" alt="Fresh Vegetables">
+                        <div class="featured-overlay">
+                            <div class="featured-icons">
+                                <a href="#" class="icon-btn"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="icon-btn"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#" class="icon-btn"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <h3>Fresh Vegetables</h3>
+                        <p>$24.99</p>
+                    </div>
+                </div>
+                
+                <div class="featured-item">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1519996529931-28324d5a630e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Organic Fruits">
+                        <div class="featured-overlay">
+                            <div class="featured-icons">
+                                <a href="#" class="icon-btn"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="icon-btn"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#" class="icon-btn"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <h3>Organic Fruits</h3>
+                        <p>$19.99</p>
+                    </div>
+                </div>
+                
+                <div class="featured-item">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Fresh Juice">
+                        <div class="featured-overlay">
+                            <div class="featured-icons">
+                                <a href="#" class="icon-btn"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="icon-btn"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#" class="icon-btn"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <h3>Fresh Juice</h3>
+                        <p>$15.99</p>
+                    </div>
+                </div>
+                
+                <div class="featured-item">
+                    <div class="featured-image">
+                        <img src="https://cdn1.harryanddavid.com/wcsstore/HarryAndDavid/images/catalog/24_0015150_30W_170_062x.jpg" alt="Dried Products">
+                        <div class="featured-overlay">
+                            <div class="featured-icons">
+                                <a href="#" class="icon-btn"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="icon-btn"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#" class="icon-btn"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <h3>Dried Products</h3>
+                        <p>$29.99</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter fade-in fade-in-delay-3">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3>Subscribe to our Newsletter</h3>
+                    <p>Get e-mail updates about our latest shops and special offers</p>
+                </div>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter email address">
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Vegefoods</h4>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Journal</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">Shipping Information</a></li>
+                        <li><a href="#">Returns & Exchange</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Have a Questions?</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+2 392 3929 210</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@yourdomain.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Copyright ©2025 All rights reserved | This template is made with <i class="fas fa-heart"></i> by <a href="#">Colorlib</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

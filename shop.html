@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegefoods - Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="shop-page">
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> + 1235 2355 98</span>
+                <span><i class="fas fa-paper-plane"></i> YOUREMAIL@EMAIL.COM</span>
+                <span>3-5 BUSINESS DAYS DELIVERY & FREE RETURNS</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>VEGEFOODS</h1>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="dropdown active">
+                        <a href="#">SHOP <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="wishlist.html">Wishlist</a></li>
+                            <li><a href="product-single.html">Single Product</a></li>
+                            <li><a href="cart.html">Cart</a></li>
+                            <li><a href="checkout.html">Checkout</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="nav-cart">
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">[0]</span>
+                </a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Shop Hero Section -->
+    <section class="hero shop-hero fade-in">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80" alt="Fresh Vegetables and Fruits">
+                </div>
+                <div class="hero-content">
+                    <h2><a href="index.html">HOME</a> PRODUCTS</h2>
+                    <h1>PRODUCTS</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories Section -->
+    <section class="product-categories fade-in fade-in-delay-1">
+        <div class="container">
+            <div class="category-filters">
+                <a href="#" class="category-filter active">All</a>
+                <a href="#" class="category-filter">Vegetables</a>
+                <a href="#" class="category-filter">Fruits</a>
+                <a href="#" class="category-filter">Juice</a>
+                <a href="#" class="category-filter">Dried</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products fade-in fade-in-delay-2">
+        <div class="container">
+            <div class="featured-grid">
+                <div class="featured-item">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80" alt="Fresh Vegetables">
+                        <div class="featured-overlay">
+                            <div class="featured-icons">
+                                <a href="#" class="icon-btn"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="icon-btn"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#" class="icon-btn"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <h3>Fresh Vegetables</h3>
+                        <p>$24.99</p>
+                    </div>
+                </div>
+                
+                <div class="featured-item">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1519996529931-28324d5a630e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Organic Fruits">
+                        <div class="featured-overlay">
+                            <div class="featured-icons">
+                                <a href="#" class="icon-btn"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="icon-btn"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#" class="icon-btn"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <h3>Organic Fruits</h3>
+                        <p>$19.99</p>
+                    </div>
+                </div>
+                
+                <div class="featured-item">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Fresh Juice">
+                        <div class="featured-overlay">
+                            <div class="featured-icons">
+                                <a href="#" class="icon-btn"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="icon-btn"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#" class="icon-btn"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <h3>Fresh Juice</h3>
+                        <p>$15.99</p>
+                    </div>
+                </div>
+                
+                <div class="featured-item">
+                    <div class="featured-image">
+                        <img src="https://cdn1.harryanddavid.com/wcsstore/HarryAndDavid/images/catalog/24_0015150_30W_170_062x.jpg" alt="Dried Products">
+                        <div class="featured-overlay">
+                            <div class="featured-icons">
+                                <a href="#" class="icon-btn"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="icon-btn"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#" class="icon-btn"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <h3>Dried Products</h3>
+                        <p>$29.99</p>
+                    </div>
+                </div>
+                
+                <div class="featured-item">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80" alt="Fresh Herbs">
+                        <div class="featured-overlay">
+                            <div class="featured-icons">
+                                <a href="#" class="icon-btn"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="icon-btn"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#" class="icon-btn"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <h3>Fresh Herbs</h3>
+                        <p>$12.99</p>
+                    </div>
+                </div>
+                
+                <div class="featured-item">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Organic Grains">
+                        <div class="featured-overlay">
+                            <div class="featured-icons">
+                                <a href="#" class="icon-btn"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="icon-btn"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#" class="icon-btn"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <h3>Organic Grains</h3>
+                        <p>$18.99</p>
+                    </div>
+                </div>
+                
+                <div class="featured-item">
+                    <div class="featured-image">
+                         <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=2070&q=80"  alt="Fresh Berries">
+                        <div class="featured-overlay">
+                            <div class="featured-icons">
+                                <a href="#" class="icon-btn"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="icon-btn"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#" class="icon-btn"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <h3>Fresh Berries</h3>
+                        <p>$22.99</p>
+                    </div>
+                </div>
+                
+                <div class="featured-item">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Citrus Fruits">
+                        <div class="featured-overlay">
+                            <div class="featured-icons">
+                                <a href="#" class="icon-btn"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="icon-btn"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#" class="icon-btn"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <h3>Citrus Fruits</h3>
+                        <p>$16.99</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Pagination Section -->
+    <section class="pagination-section fade-in fade-in-delay-3">
+        <div class="container">
+            <div class="pagination">
+                <a href="#" class="page-link"><i class="fas fa-chevron-left"></i></a>
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link">4</a>
+                <a href="#" class="page-link">5</a>
+                <a href="#" class="page-link"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter fade-in fade-in-delay-4">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3>Subscribe to our Newsletter</h3>
+                    <p>Get e-mail updates about our latest shops and special offers</p>
+                </div>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter email address">
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Vegefoods</h4>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Journal</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">Shipping Information</a></li>
+                        <li><a href="#">Returns & Exchange</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Have a Questions?</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+2 392 3929 210</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@yourdomain.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Copyright ©2025 All rights reserved | This template is made with <i class="fas fa-heart"></i> by <a href="#">Colorlib</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

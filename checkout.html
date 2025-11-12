@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegefoods - Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="checkout-page">
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> + 1235 2355 98</span>
+                <span><i class="fas fa-paper-plane"></i> YOUREMAIL@EMAIL.COM</span>
+                <span>3-5 BUSINESS DAYS DELIVERY & FREE RETURNS</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1><a href="index.html">VEGEFOODS</a></h1>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="#">SHOP <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="wishlist.html">Wishlist</a></li>
+                            <li><a href="product-single.html">Single Product</a></li>
+                            <li><a href="cart.html">Cart</a></li>
+                            <li><a href="checkout.html">Checkout</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="nav-cart">
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">[0]</span>
+                </a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Shop Hero Section -->
+    <section class="hero shop-hero fade-in" style="margin-top: 0;">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <div class="hero-image" style="height: 400px;">
+                    <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80" alt="Fresh Vegetables and Fruits" style="height: 100%; object-fit: cover;">
+                </div>
+                <div class="hero-content" style="margin-top: -80px;">
+                    <h2 style="font-size: 18px;"><a href="index.html">HOME</a> CHECKOUT</h2>
+                    <h1 style="font-size: 48px;">CHECKOUT</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Form Section -->
+    <section class="checkout-form fade-in fade-in-delay-1" style="background-color: white;">
+        <div class="container">
+            <div class="checkout-layout">
+                <!-- Left Column - Billing Details -->
+                <div class="billing-details" style="background: transparent; box-shadow: none;">
+                    <h3 style="background: transparent;">Billing Details</h3>
+                    <form class="checkout-form-fields" style="background: transparent;">
+                        <div class="form-row" style="background: transparent;">
+                            <div class="form-group" style="background: transparent;">
+                                <label for="firstName" style="background: transparent;">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required style="background: transparent; border: 1px solid #ddd;">
+                            </div>
+                            <div class="form-group" style="background: transparent;">
+                                <label for="lastName" style="background: transparent;">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required style="background: transparent; border: 1px solid #ddd;">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group" style="background: transparent;">
+                            <label for="country" style="background: transparent;">State / Country *</label>
+                            <select id="country" name="country" required style="background: transparent; border: 1px solid #ddd;">
+                                <option value="" style="background: transparent;">Select a country</option>
+                                <option value="US" style="background: transparent;">United States</option>
+                                <option value="CA" style="background: transparent;">Canada</option>
+                                <option value="UK" style="background: transparent;">United Kingdom</option>
+                                <option value="AU" style="background: transparent;">Australia</option>
+                                <option value="DE" style="background: transparent;">Germany</option>
+                                <option value="FR" style="background: transparent;">France</option>
+                                <option value="IN" style="background: transparent;">India</option>
+                                <option value="PK" style="background: transparent;">Pakistan</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group" style="background: transparent;">
+                            <label for="address" style="background: transparent;">Street Address *</label>
+                            <input type="text" id="address" name="address" placeholder="House number and street name" required style="background: transparent; border: 1px solid #ddd;">
+                        </div>
+                        
+                        <div class="form-group" style="background: transparent;">
+                            <label for="address2" style="background: transparent;">Apartment, suite, unit etc. (optional)</label>
+                            <input type="text" id="address2" name="address2" style="background: transparent; border: 1px solid #ddd;">
+                        </div>
+                        
+                        <div class="form-row" style="background: transparent;">
+                            <div class="form-group" style="background: transparent;">
+                                <label for="city" style="background: transparent;">Town / City *</label>
+                                <input type="text" id="city" name="city" required style="background: transparent; border: 1px solid #ddd;">
+                            </div>
+                            <div class="form-group" style="background: transparent;">
+                                <label for="postcode" style="background: transparent;">Postcode / ZIP *</label>
+                                <input type="text" id="postcode" name="postcode" required style="background: transparent; border: 1px solid #ddd;">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row" style="background: transparent;">
+                            <div class="form-group" style="background: transparent;">
+                                <label for="phone" style="background: transparent;">Phone *</label>
+                                <input type="tel" id="phone" name="phone" required style="background: transparent; border: 1px solid #ddd;">
+                            </div>
+                            <div class="form-group" style="background: transparent;">
+                                <label for="email" style="background: transparent;">Email Address *</label>
+                                <input type="email" id="email" name="email" required style="background: transparent; border: 1px solid #ddd;">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group" style="background: transparent;">
+                            <label class="checkbox-label" style="background: transparent;">
+                                <input type="checkbox" name="createAccount" style="background: transparent;">
+                                <span class="checkmark" style="background: transparent;"></span>
+                                Create an Account?
+                            </label>
+                        </div>
+                        
+                        <div class="form-group" style="background: transparent;">
+                            <label class="checkbox-label" style="background: transparent;">
+                                <input type="checkbox" name="shipToDifferent" style="background: transparent;">
+                                <span class="checkmark" style="background: transparent;"></span>
+                                Ship to different address
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Right Column - Order Summary -->
+                <div class="order-summary" style="background: transparent; box-shadow: none;">
+                    <h3>Cart Total</h3>
+                    <div class="order-totals">
+                        <div class="total-row">
+                            <span>Subtotal</span>
+                            <span>$20.60</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Delivery</span>
+                            <span>$0.00</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Discount</span>
+                            <span>$3.00</span>
+                        </div>
+                        <div class="total-row total-final">
+                            <span>TOTAL</span>
+                            <span>$17.60</span>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-methods">
+                        <h4>Payment Method</h4>
+                        <div class="payment-option">
+                            <label class="radio-label">
+                                <input type="radio" name="payment" value="bank-transfer" checked>
+                                <span class="radio-custom"></span>
+                                Direct Bank Transfer
+                            </label>
+                        </div>
+                        <div class="payment-option">
+                            <label class="radio-label">
+                                <input type="radio" name="payment" value="check-payment">
+                                <span class="radio-custom"></span>
+                                Check Payment
+                            </label>
+                        </div>
+                        <div class="payment-option">
+                            <label class="radio-label">
+                                <input type="radio" name="payment" value="paypal">
+                                <span class="radio-custom"></span>
+                                Paypal
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="terms" required>
+                            <span class="checkmark"></span>
+                            I have read and accept the terms and conditions
+                        </label>
+                    </div>
+                    
+                    <button class="place-order-btn" style="background: #82ae46; color: white; border: none; padding: 15px 30px; border-radius: 5px; cursor: pointer; font-size: 16px; font-weight: 600;">Place an order</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter fade-in fade-in-delay-2">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3>Subscribe to our Newsletter</h3>
+                    <p>Get e-mail updates about our latest shops and special offers</p>
+                </div>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter email address">
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Vegefoods</h4>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Journal</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">Shipping Information</a></li>
+                        <li><a href="#">Returns & Exchange</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Have a Questions?</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+2 392 3929 210</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@yourdomain.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Copyright ©2025 All rights reserved | This template is made with <i class="fas fa-heart"></i> by <a href="#">Colorlib</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
